@@ -1,0 +1,163 @@
+\hypertarget{class_scene}{}\section{Scene Class Reference}
+\label{class_scene}\index{Scene@{Scene}}
+
+
+{\ttfamily \#include $<$scene.\+h$>$}
+
+Inheritance diagram for Scene\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_scene}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_scene_ae76b830c1156bb40bd744afb63776be2}{init\+Scene} ()=0
+\item 
+virtual void \hyperlink{class_scene_aafa9ccf4d019005fdd41672afd13a7a9}{update} (float t)=0
+\item 
+virtual void \hyperlink{class_scene_a823f4cd60d27932ee16f74adb0421ff6}{render} ()=0
+\item 
+virtual void \hyperlink{class_scene_a454bd0a09c125201fbb32e15d4f62fa3}{resize} (int, int)=0
+\item 
+virtual void \hyperlink{class_scene_ab0c59864d813f7d11a2d362acfdd0e26}{set\+Angle\+Axis} (float angle, vec3 axis)=0
+\item 
+virtual void \hyperlink{class_scene_a0813a564a23d9a2d0a965d5bf422c1fd}{write\+Line} (glm\+::vec3 p1, glm\+::vec3 p2)=0
+\item 
+virtual void \hyperlink{class_scene_a2e371aa848e8c30f593c2d9a2687dd28}{Create\+V\+B\+O\+Line} ()=0
+\item 
+virtual void \hyperlink{class_scene_af0c5ec79be9fbb4a6a2554ac4aaaf473}{rotate\+Model} (\hyperlink{structset_of_values}{set\+Of\+Values} param)=0
+\item 
+virtual void \hyperlink{class_scene_a04ae3637cb26c4ad95004372d5a63654}{update\+Eye\+Camera\+On\+Cube} (std\+::vector$<$ double $>$ center)=0
+\item 
+virtual void \hyperlink{class_scene_a52181459b75a0c2f4706a26f3e200ca1}{update\+Eye\+Camera\+User} (\hyperlink{structset_of_view}{set\+Of\+View} param)=0
+\item 
+virtual void \hyperlink{class_scene_a74dc104a3f44abf1f09d7b627c9baa36}{restore\+Cam\+Default} ()=0
+\item 
+virtual std\+::vector$<$ double $>$ const  \& \hyperlink{class_scene_a15d25044dbd65a8d7d0759888fcd55a1}{get\+Center} ()=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_scene_a2e371aa848e8c30f593c2d9a2687dd28}{}\label{class_scene_a2e371aa848e8c30f593c2d9a2687dd28} 
+\index{Scene@{Scene}!Create\+V\+B\+O\+Line@{Create\+V\+B\+O\+Line}}
+\index{Create\+V\+B\+O\+Line@{Create\+V\+B\+O\+Line}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{Create\+V\+B\+O\+Line()}{CreateVBOLine()}}
+{\footnotesize\ttfamily virtual void Scene\+::\+Create\+V\+B\+O\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_scene_basic_ac0cc945b040983d7527cda36963ec711}{Scene\+Basic}.
+
+\hypertarget{class_scene_a15d25044dbd65a8d7d0759888fcd55a1}{}\label{class_scene_a15d25044dbd65a8d7d0759888fcd55a1} 
+\index{Scene@{Scene}!get\+Center@{get\+Center}}
+\index{get\+Center@{get\+Center}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{get\+Center()}{getCenter()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$double$>$ const\& Scene\+::get\+Center (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_scene_basic_ac805ba94deedc1f4d606d9554d088ea0}{Scene\+Basic}.
+
+\hypertarget{class_scene_ae76b830c1156bb40bd744afb63776be2}{}\label{class_scene_ae76b830c1156bb40bd744afb63776be2} 
+\index{Scene@{Scene}!init\+Scene@{init\+Scene}}
+\index{init\+Scene@{init\+Scene}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{init\+Scene()}{initScene()}}
+{\footnotesize\ttfamily virtual void Scene\+::init\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Load textures, initialize shaders, etc. 
+
+Implemented in \hyperlink{class_scene_basic_a0575ddd74a9f9a5f238def19657f275e}{Scene\+Basic}.
+
+\hypertarget{class_scene_a823f4cd60d27932ee16f74adb0421ff6}{}\label{class_scene_a823f4cd60d27932ee16f74adb0421ff6} 
+\index{Scene@{Scene}!render@{render}}
+\index{render@{render}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily virtual void Scene\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Draw your scene. 
+
+Implemented in \hyperlink{class_scene_basic_a8cfaad3ce6a4586e088b8d55d0e23ea6}{Scene\+Basic}.
+
+\hypertarget{class_scene_a454bd0a09c125201fbb32e15d4f62fa3}{}\label{class_scene_a454bd0a09c125201fbb32e15d4f62fa3} 
+\index{Scene@{Scene}!resize@{resize}}
+\index{resize@{resize}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily virtual void Scene\+::resize (\begin{DoxyParamCaption}\item[{int}]{,  }\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Called when screen is resized 
+
+Implemented in \hyperlink{class_scene_basic_af8a829370fa5e7386f46b5b659f3a083}{Scene\+Basic}.
+
+\hypertarget{class_scene_a74dc104a3f44abf1f09d7b627c9baa36}{}\label{class_scene_a74dc104a3f44abf1f09d7b627c9baa36} 
+\index{Scene@{Scene}!restore\+Cam\+Default@{restore\+Cam\+Default}}
+\index{restore\+Cam\+Default@{restore\+Cam\+Default}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{restore\+Cam\+Default()}{restoreCamDefault()}}
+{\footnotesize\ttfamily virtual void Scene\+::restore\+Cam\+Default (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_scene_basic_ad7930ecd7654ac2c794ba666d71330e0}{Scene\+Basic}.
+
+\hypertarget{class_scene_af0c5ec79be9fbb4a6a2554ac4aaaf473}{}\label{class_scene_af0c5ec79be9fbb4a6a2554ac4aaaf473} 
+\index{Scene@{Scene}!rotate\+Model@{rotate\+Model}}
+\index{rotate\+Model@{rotate\+Model}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{rotate\+Model()}{rotateModel()}}
+{\footnotesize\ttfamily virtual void Scene\+::rotate\+Model (\begin{DoxyParamCaption}\item[{\hyperlink{structset_of_values}{set\+Of\+Values}}]{param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_scene_basic_aa434179e3d31306f521f0d38c34baea3}{Scene\+Basic}.
+
+\hypertarget{class_scene_ab0c59864d813f7d11a2d362acfdd0e26}{}\label{class_scene_ab0c59864d813f7d11a2d362acfdd0e26} 
+\index{Scene@{Scene}!set\+Angle\+Axis@{set\+Angle\+Axis}}
+\index{set\+Angle\+Axis@{set\+Angle\+Axis}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{set\+Angle\+Axis()}{setAngleAxis()}}
+{\footnotesize\ttfamily virtual void Scene\+::set\+Angle\+Axis (\begin{DoxyParamCaption}\item[{float}]{angle,  }\item[{vec3}]{axis }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_scene_basic_ae98490655b1c7cffe9ebeca001096b87}{Scene\+Basic}.
+
+\hypertarget{class_scene_aafa9ccf4d019005fdd41672afd13a7a9}{}\label{class_scene_aafa9ccf4d019005fdd41672afd13a7a9} 
+\index{Scene@{Scene}!update@{update}}
+\index{update@{update}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void Scene\+::update (\begin{DoxyParamCaption}\item[{float}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+This is called prior to every frame. Use this to update your animation. 
+
+Implemented in \hyperlink{class_scene_basic_a40b11f479361056d418edbf0a14c9a59}{Scene\+Basic}.
+
+\hypertarget{class_scene_a04ae3637cb26c4ad95004372d5a63654}{}\label{class_scene_a04ae3637cb26c4ad95004372d5a63654} 
+\index{Scene@{Scene}!update\+Eye\+Camera\+On\+Cube@{update\+Eye\+Camera\+On\+Cube}}
+\index{update\+Eye\+Camera\+On\+Cube@{update\+Eye\+Camera\+On\+Cube}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{update\+Eye\+Camera\+On\+Cube()}{updateEyeCameraOnCube()}}
+{\footnotesize\ttfamily virtual void Scene\+::update\+Eye\+Camera\+On\+Cube (\begin{DoxyParamCaption}\item[{std\+::vector$<$ double $>$}]{center }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_scene_basic_a3fa1c3ba519581687c7fe7214af8cc58}{Scene\+Basic}.
+
+\hypertarget{class_scene_a52181459b75a0c2f4706a26f3e200ca1}{}\label{class_scene_a52181459b75a0c2f4706a26f3e200ca1} 
+\index{Scene@{Scene}!update\+Eye\+Camera\+User@{update\+Eye\+Camera\+User}}
+\index{update\+Eye\+Camera\+User@{update\+Eye\+Camera\+User}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{update\+Eye\+Camera\+User()}{updateEyeCameraUser()}}
+{\footnotesize\ttfamily virtual void Scene\+::update\+Eye\+Camera\+User (\begin{DoxyParamCaption}\item[{\hyperlink{structset_of_view}{set\+Of\+View}}]{param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_scene_basic_abcd244d71f229f3d7c7133818c5e1898}{Scene\+Basic}.
+
+\hypertarget{class_scene_a0813a564a23d9a2d0a965d5bf422c1fd}{}\label{class_scene_a0813a564a23d9a2d0a965d5bf422c1fd} 
+\index{Scene@{Scene}!write\+Line@{write\+Line}}
+\index{write\+Line@{write\+Line}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{write\+Line()}{writeLine()}}
+{\footnotesize\ttfamily virtual void Scene\+::write\+Line (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{p1,  }\item[{glm\+::vec3}]{p2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Q\+T\+\_\+projets/\+Cube\+Menu/\hyperlink{scene_8h}{scene.\+h}\end{DoxyCompactItemize}

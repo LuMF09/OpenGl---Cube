@@ -1,0 +1,173 @@
+\hypertarget{class_main_view}{}\section{Main\+View Class Reference}
+\label{class_main_view}\index{Main\+View@{Main\+View}}
+
+
+It is the main view, it will recover data and transmit them.  
+
+
+
+
+{\ttfamily \#include $<$mainview.\+h$>$}
+
+Inheritance diagram for Main\+View\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_main_view}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_main_view_a456d4761f9c8dcf828ea4fcfac37c21a}{timer\+Update} ()
+\item 
+void \hyperlink{class_main_view_afbc772adcee43265ce364ff656c19500}{toggle\+Animation} ()
+\item 
+void \hyperlink{class_main_view_a8e1549cbc6edb92d9eedfeae3976f161}{take\+Screen\+Shot} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_main_view_a46ff460541fd6b9dfe75eeff6b78466a}{Main\+View} (const Q\+G\+L\+Format \&format, Q\+Widget $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{class_main_view}{Main\+View}. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_view_a90f82be94e9397e1f12efbe1bd9dcc8a}{update\+Cube} (glm\+::vec3 p1, glm\+::vec3 p2)
+\begin{DoxyCompactList}\small\item\em Update the models of the line and the cube. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_view_a4534f6ae9efa1c02922692dc06cc335a}{rotate\+Matrix} (\hyperlink{structset_of_values}{set\+Of\+Values} param)
+\begin{DoxyCompactList}\small\item\em Do the transformations (translations and rotation) on the models. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_view_a3a3c5e12f747bb2226401c3cbd7618f6}{update\+Camera} (\hyperlink{structset_of_view}{set\+Of\+View} param)
+\begin{DoxyCompactList}\small\item\em Update the camera. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_view_ad30cbdd44fc8711ec461bd268fe9d66a}{restore\+Camera} ()
+\begin{DoxyCompactList}\small\item\em Restore the default parameters of the cube and the view. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_main_view_aba66808352339bdf5f459d134181e4b0}{initialize\+GL} ()
+\item 
+void \hyperlink{class_main_view_a9b9be05c20817f6eb853bd58c406f0e0}{paint\+GL} ()
+\item 
+void \hyperlink{class_main_view_a8d8c7515e0a637a0db30608ebf489f1d}{resize\+GL} (int w, int h)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+It is the main view, it will recover data and transmit them. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_main_view_a46ff460541fd6b9dfe75eeff6b78466a}{}\label{class_main_view_a46ff460541fd6b9dfe75eeff6b78466a} 
+\index{Main\+View@{Main\+View}!Main\+View@{Main\+View}}
+\index{Main\+View@{Main\+View}!Main\+View@{Main\+View}}
+\subsubsection{\texorpdfstring{Main\+View()}{MainView()}}
+{\footnotesize\ttfamily Main\+View\+::\+Main\+View (\begin{DoxyParamCaption}\item[{const Q\+G\+L\+Format \&}]{format,  }\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Constructor of \hyperlink{class_main_view}{Main\+View}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em format} & Specifies the display format of an Open\+GL rendering context. \\
+\hline
+{\em widget} & the global widget \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_main_view_aba66808352339bdf5f459d134181e4b0}{}\label{class_main_view_aba66808352339bdf5f459d134181e4b0} 
+\index{Main\+View@{Main\+View}!initialize\+GL@{initialize\+GL}}
+\index{initialize\+GL@{initialize\+GL}!Main\+View@{Main\+View}}
+\subsubsection{\texorpdfstring{initialize\+G\+L()}{initializeGL()}}
+{\footnotesize\ttfamily void Main\+View\+::initialize\+GL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Initialize \hypertarget{class_main_view_a9b9be05c20817f6eb853bd58c406f0e0}{}\label{class_main_view_a9b9be05c20817f6eb853bd58c406f0e0} 
+\index{Main\+View@{Main\+View}!paint\+GL@{paint\+GL}}
+\index{paint\+GL@{paint\+GL}!Main\+View@{Main\+View}}
+\subsubsection{\texorpdfstring{paint\+G\+L()}{paintGL()}}
+{\footnotesize\ttfamily void Main\+View\+::paint\+GL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Paint \hypertarget{class_main_view_a8d8c7515e0a637a0db30608ebf489f1d}{}\label{class_main_view_a8d8c7515e0a637a0db30608ebf489f1d} 
+\index{Main\+View@{Main\+View}!resize\+GL@{resize\+GL}}
+\index{resize\+GL@{resize\+GL}!Main\+View@{Main\+View}}
+\subsubsection{\texorpdfstring{resize\+G\+L()}{resizeGL()}}
+{\footnotesize\ttfamily void Main\+View\+::resize\+GL (\begin{DoxyParamCaption}\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Resize \hypertarget{class_main_view_ad30cbdd44fc8711ec461bd268fe9d66a}{}\label{class_main_view_ad30cbdd44fc8711ec461bd268fe9d66a} 
+\index{Main\+View@{Main\+View}!restore\+Camera@{restore\+Camera}}
+\index{restore\+Camera@{restore\+Camera}!Main\+View@{Main\+View}}
+\subsubsection{\texorpdfstring{restore\+Camera()}{restoreCamera()}}
+{\footnotesize\ttfamily void Main\+View\+::restore\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Restore the default parameters of the cube and the view. 
+
+\hypertarget{class_main_view_a4534f6ae9efa1c02922692dc06cc335a}{}\label{class_main_view_a4534f6ae9efa1c02922692dc06cc335a} 
+\index{Main\+View@{Main\+View}!rotate\+Matrix@{rotate\+Matrix}}
+\index{rotate\+Matrix@{rotate\+Matrix}!Main\+View@{Main\+View}}
+\subsubsection{\texorpdfstring{rotate\+Matrix()}{rotateMatrix()}}
+{\footnotesize\ttfamily void Main\+View\+::rotate\+Matrix (\begin{DoxyParamCaption}\item[{\hyperlink{structset_of_values}{set\+Of\+Values}}]{param }\end{DoxyParamCaption})}
+
+
+
+Do the transformations (translations and rotation) on the models. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em param} & set of values from the user \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_main_view_a8e1549cbc6edb92d9eedfeae3976f161}{}\label{class_main_view_a8e1549cbc6edb92d9eedfeae3976f161} 
+\index{Main\+View@{Main\+View}!take\+Screen\+Shot@{take\+Screen\+Shot}}
+\index{take\+Screen\+Shot@{take\+Screen\+Shot}!Main\+View@{Main\+View}}
+\subsubsection{\texorpdfstring{take\+Screen\+Shot}{takeScreenShot}}
+{\footnotesize\ttfamily void Main\+View\+::take\+Screen\+Shot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Slot which allow us to do a screenshot \hypertarget{class_main_view_a456d4761f9c8dcf828ea4fcfac37c21a}{}\label{class_main_view_a456d4761f9c8dcf828ea4fcfac37c21a} 
+\index{Main\+View@{Main\+View}!timer\+Update@{timer\+Update}}
+\index{timer\+Update@{timer\+Update}!Main\+View@{Main\+View}}
+\subsubsection{\texorpdfstring{timer\+Update}{timerUpdate}}
+{\footnotesize\ttfamily void Main\+View\+::timer\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Slot wich update the timer \hypertarget{class_main_view_afbc772adcee43265ce364ff656c19500}{}\label{class_main_view_afbc772adcee43265ce364ff656c19500} 
+\index{Main\+View@{Main\+View}!toggle\+Animation@{toggle\+Animation}}
+\index{toggle\+Animation@{toggle\+Animation}!Main\+View@{Main\+View}}
+\subsubsection{\texorpdfstring{toggle\+Animation}{toggleAnimation}}
+{\footnotesize\ttfamily void Main\+View\+::toggle\+Animation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Slot which deals with animations \hypertarget{class_main_view_a3a3c5e12f747bb2226401c3cbd7618f6}{}\label{class_main_view_a3a3c5e12f747bb2226401c3cbd7618f6} 
+\index{Main\+View@{Main\+View}!update\+Camera@{update\+Camera}}
+\index{update\+Camera@{update\+Camera}!Main\+View@{Main\+View}}
+\subsubsection{\texorpdfstring{update\+Camera()}{updateCamera()}}
+{\footnotesize\ttfamily void Main\+View\+::update\+Camera (\begin{DoxyParamCaption}\item[{\hyperlink{structset_of_view}{set\+Of\+View}}]{param }\end{DoxyParamCaption})}
+
+
+
+Update the camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em param} & set of values of the view from the user \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_main_view_a90f82be94e9397e1f12efbe1bd9dcc8a}{}\label{class_main_view_a90f82be94e9397e1f12efbe1bd9dcc8a} 
+\index{Main\+View@{Main\+View}!update\+Cube@{update\+Cube}}
+\index{update\+Cube@{update\+Cube}!Main\+View@{Main\+View}}
+\subsubsection{\texorpdfstring{update\+Cube()}{updateCube()}}
+{\footnotesize\ttfamily void Main\+View\+::update\+Cube (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{p1,  }\item[{glm\+::vec3}]{p2 }\end{DoxyParamCaption})}
+
+
+
+Update the models of the line and the cube. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & point 1 of the line \\
+\hline
+{\em p1} & point 1 of the line \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Q\+T\+\_\+projets/\+Cube\+Menu/\hyperlink{mainview_8h}{mainview.\+h}\item 
+D\+:/\+Q\+T\+\_\+projets/\+Cube\+Menu/\hyperlink{mainview_8cpp}{mainview.\+cpp}\end{DoxyCompactItemize}

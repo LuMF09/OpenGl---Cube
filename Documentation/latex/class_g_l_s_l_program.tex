@@ -1,0 +1,460 @@
+\hypertarget{class_g_l_s_l_program}{}\section{G\+L\+S\+L\+Program Class Reference}
+\label{class_g_l_s_l_program}\index{G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}}
+
+
+{\ttfamily \#include $<$glslprogram.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_g_l_s_l_program_a9a93ab534634ee4abfda2f216008e553}{G\+L\+S\+L\+Program} ()
+\begin{DoxyCompactList}\small\item\em Default constructor of \hyperlink{class_g_l_s_l_program}{G\+L\+S\+L\+Program}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_g_l_s_l_program_a31f24024046d5ed7646d0c53df4898dc}{compile\+Shader\+From\+File} (const char $\ast$file\+Name, \hyperlink{namespace_g_l_s_l_shader_a5da03bdfde28d414fcf090182b3b8177}{G\+L\+S\+L\+Shader\+::\+G\+L\+S\+L\+Shader\+Type} type)
+\begin{DoxyCompactList}\small\item\em Read the shader source from a file and compile. \end{DoxyCompactList}\item 
+bool \hyperlink{class_g_l_s_l_program_a428c7ce6d50b7100d06c621e6647dda8}{compile\+Shader\+From\+String} (const string \&source, \hyperlink{namespace_g_l_s_l_shader_a5da03bdfde28d414fcf090182b3b8177}{G\+L\+S\+L\+Shader\+::\+G\+L\+S\+L\+Shader\+Type} type)
+\begin{DoxyCompactList}\small\item\em Compiles shader source code stored in a string. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{class_g_l_s_l_program_afc8f73c15d9696c49783b86a187123be}{load\+File\+To\+String} (const char $\ast$fname)
+\begin{DoxyCompactList}\small\item\em Load the shader source code from the file into a string. \end{DoxyCompactList}\item 
+void \hyperlink{class_g_l_s_l_program_afe85e8fe71e8b906f72ca3858531fa39}{load\+\_\+shader} (G\+Luint shaderobject, const char $\ast$shadersourcefilename)
+\begin{DoxyCompactList}\small\item\em Load the shader code from a file. \end{DoxyCompactList}\item 
+void \hyperlink{class_g_l_s_l_program_ae34d52138ce5780b39a6396e68b90349}{glcpp\+Shader\+Source} (G\+Luint shader, std\+::string const \&shader\+\_\+string)
+\begin{DoxyCompactList}\small\item\em gl\+Shader\+Source sets the source code in shader to the source code in the array of strings specified by string. \end{DoxyCompactList}\item 
+G\+Luint \hyperlink{class_g_l_s_l_program_ae4fe65254ed23ef5fba32dd4b7a3bee2}{create\+Shader} (G\+Lenum shader\+Type)
+\begin{DoxyCompactList}\small\item\em gl\+Create\+Shader creates an empty shader object and returns a non-\/zero value by which it can be referenced. \end{DoxyCompactList}\item 
+void \hyperlink{class_g_l_s_l_program_ae1ebde6b1ea8269f37064adb8e6d857f}{compile\+Shader} (G\+Luint shader)
+\begin{DoxyCompactList}\small\item\em gl\+Compile\+Shader compiles the source code strings that have been stored in the shader object specified by shader. \end{DoxyCompactList}\item 
+void \hyperlink{class_g_l_s_l_program_a4eebc77a6efe271bbf5eba25e8a27b66}{check\+Compile\+Status} (G\+Luint shader)
+\begin{DoxyCompactList}\small\item\em Provides error log information for compilation of shader. \end{DoxyCompactList}\item 
+void \hyperlink{class_g_l_s_l_program_a4b09d65133e3d9495315c2db2fb9295d}{attach\+Shader} (G\+Luint shader)
+\begin{DoxyCompactList}\small\item\em Attaches the shader object specified by shader to the program object specified by handle. \end{DoxyCompactList}\item 
+bool \hyperlink{class_g_l_s_l_program_a79c92c1c9a1a09c0a091cd52a8f602c6}{link} ()
+\item 
+void \hyperlink{class_g_l_s_l_program_a0ea2aeacb4361b37f145246430134bb6}{use} ()
+\item 
+bool \hyperlink{class_g_l_s_l_program_a07aaaf69f5837deb59a7551dc323f667}{create\+Object} ()
+\item 
+string \hyperlink{class_g_l_s_l_program_ac03cbf803fbcc60d3ff4b3b6d4ecbaa6}{log} ()
+\item 
+G\+Luint \hyperlink{class_g_l_s_l_program_a37f5a6e85135bc51ed4a94712bacde76}{get\+Handle} ()
+\item 
+bool \hyperlink{class_g_l_s_l_program_ad0d1efa38db415e35d9a329a93828815}{is\+Linked} ()
+\item 
+void \hyperlink{class_g_l_s_l_program_a54589ae245f6fac51f79a6617c91240b}{bind\+Attrib\+Location} (G\+Luint location, const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em associates a user-\/defined attribute variable in the program object specified by handle with a generic vertex attribute index. \end{DoxyCompactList}\item 
+void \hyperlink{class_g_l_s_l_program_a44270f942de121ef2493e26f1226a902}{bind\+Frag\+Data\+Location} (G\+Luint location, const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em bind a user-\/defined varying out variable specified by name to a fragment shader color number specified by location \end{DoxyCompactList}\item 
+void \hyperlink{class_g_l_s_l_program_a85e4c896c2a8524cb4574a064a2dfb0c}{set\+Uniform} (const char $\ast$name, float x, float y, float z)
+\begin{DoxyCompactList}\small\item\em x,y,z are the new values to be used for the specified uniform variable \end{DoxyCompactList}\item 
+void \hyperlink{class_g_l_s_l_program_a8784d794a6dbe97903d85bd0135a61c8}{set\+Uniform} (const char $\ast$name, const vec3 \&v)
+\begin{DoxyCompactList}\small\item\em v.\+x,v.\+y,v.\+z are the new values to be used for the specified uniform variable \end{DoxyCompactList}\item 
+void \hyperlink{class_g_l_s_l_program_aadf3691c119baac516735b0d01b85f7e}{set\+Uniform} (const char $\ast$name, const vec4 \&v)
+\begin{DoxyCompactList}\small\item\em v.\+x,v.\+y,v.\+z, v.\+w are the new values to be used for the specified uniform variable \end{DoxyCompactList}\item 
+void \hyperlink{class_g_l_s_l_program_aae087de52f91a47ac23c9f6ebf369bc3}{set\+Uniform} (const char $\ast$name, float val)
+\begin{DoxyCompactList}\small\item\em val is the new value for the uniform variable \end{DoxyCompactList}\item 
+void \hyperlink{class_g_l_s_l_program_a437782e359f10918044f1bbad0a98148}{set\+Uniform} (const char $\ast$name, int val)
+\begin{DoxyCompactList}\small\item\em val is the new value for the uniform variable \end{DoxyCompactList}\item 
+void \hyperlink{class_g_l_s_l_program_acfab16fafb4617f0625f170b39716eb8}{set\+Uniform} (const char $\ast$name, bool val)
+\begin{DoxyCompactList}\small\item\em val is the new value for the uniform variable \end{DoxyCompactList}\item 
+void \hyperlink{class_g_l_s_l_program_a44a7ace14e6c82311526e47264957fa9}{set\+Uniform} (const char $\ast$name, const mat4 \&m)
+\begin{DoxyCompactList}\small\item\em The commands gl\+Uniform\+Matrix\{2$\vert$3$\vert$4\}fv are used to modify a matrix or an array of matrices. The numbers in the command name are interpreted as the dimensionality of the matrix. \end{DoxyCompactList}\item 
+void \hyperlink{class_g_l_s_l_program_a69bd967b17f6b06e9fd4772b25e86396}{set\+Uniform} (const char $\ast$name, const mat3 \&m)
+\begin{DoxyCompactList}\small\item\em The commands gl\+Uniform\+Matrix\{2$\vert$3$\vert$4\}fv are used to modify a matrix or an array of matrices. The numbers in the command name are interpreted as the dimensionality of the matrix. \end{DoxyCompactList}\item 
+void \hyperlink{class_g_l_s_l_program_a75e11d36a5b634c58a84caa96c9c38e4}{print\+Active\+Uniforms} ()
+\begin{DoxyCompactList}\small\item\em Prints all the active uniform variables. \end{DoxyCompactList}\item 
+void \hyperlink{class_g_l_s_l_program_aab7c8bc0e5d0b75a9eb0c60de3cda5b5}{print\+Active\+Attribs} ()
+\begin{DoxyCompactList}\small\item\em Prints all the active attribute variables. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_g_l_s_l_program_a9a93ab534634ee4abfda2f216008e553}{}\label{class_g_l_s_l_program_a9a93ab534634ee4abfda2f216008e553} 
+\index{G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}!G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}}
+\index{G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}!G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}}
+\subsubsection{\texorpdfstring{G\+L\+S\+L\+Program()}{GLSLProgram()}}
+{\footnotesize\ttfamily G\+L\+S\+L\+Program\+::\+G\+L\+S\+L\+Program (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor of \hyperlink{class_g_l_s_l_program}{G\+L\+S\+L\+Program}. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_g_l_s_l_program_a4b09d65133e3d9495315c2db2fb9295d}{}\label{class_g_l_s_l_program_a4b09d65133e3d9495315c2db2fb9295d} 
+\index{G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}!attach\+Shader@{attach\+Shader}}
+\index{attach\+Shader@{attach\+Shader}!G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}}
+\subsubsection{\texorpdfstring{attach\+Shader()}{attachShader()}}
+{\footnotesize\ttfamily void G\+L\+S\+L\+Program\+::attach\+Shader (\begin{DoxyParamCaption}\item[{G\+Luint}]{shader }\end{DoxyParamCaption})}
+
+
+
+Attaches the shader object specified by shader to the program object specified by handle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shader} & shader \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_g_l_s_l_program_a54589ae245f6fac51f79a6617c91240b}{}\label{class_g_l_s_l_program_a54589ae245f6fac51f79a6617c91240b} 
+\index{G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}!bind\+Attrib\+Location@{bind\+Attrib\+Location}}
+\index{bind\+Attrib\+Location@{bind\+Attrib\+Location}!G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}}
+\subsubsection{\texorpdfstring{bind\+Attrib\+Location()}{bindAttribLocation()}}
+{\footnotesize\ttfamily void G\+L\+S\+L\+Program\+::bind\+Attrib\+Location (\begin{DoxyParamCaption}\item[{G\+Luint}]{location,  }\item[{const char $\ast$}]{name }\end{DoxyParamCaption})}
+
+
+
+associates a user-\/defined attribute variable in the program object specified by handle with a generic vertex attribute index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & location of the G\+Luint \\
+\hline
+{\em name} & name \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_g_l_s_l_program_a44270f942de121ef2493e26f1226a902}{}\label{class_g_l_s_l_program_a44270f942de121ef2493e26f1226a902} 
+\index{G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}!bind\+Frag\+Data\+Location@{bind\+Frag\+Data\+Location}}
+\index{bind\+Frag\+Data\+Location@{bind\+Frag\+Data\+Location}!G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}}
+\subsubsection{\texorpdfstring{bind\+Frag\+Data\+Location()}{bindFragDataLocation()}}
+{\footnotesize\ttfamily void G\+L\+S\+L\+Program\+::bind\+Frag\+Data\+Location (\begin{DoxyParamCaption}\item[{G\+Luint}]{location,  }\item[{const char $\ast$}]{name }\end{DoxyParamCaption})}
+
+
+
+bind a user-\/defined varying out variable specified by name to a fragment shader color number specified by location 
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & location of the G\+Luint \\
+\hline
+{\em name} & name \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_g_l_s_l_program_a4eebc77a6efe271bbf5eba25e8a27b66}{}\label{class_g_l_s_l_program_a4eebc77a6efe271bbf5eba25e8a27b66} 
+\index{G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}!check\+Compile\+Status@{check\+Compile\+Status}}
+\index{check\+Compile\+Status@{check\+Compile\+Status}!G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}}
+\subsubsection{\texorpdfstring{check\+Compile\+Status()}{checkCompileStatus()}}
+{\footnotesize\ttfamily void G\+L\+S\+L\+Program\+::check\+Compile\+Status (\begin{DoxyParamCaption}\item[{G\+Luint}]{shader }\end{DoxyParamCaption})}
+
+
+
+Provides error log information for compilation of shader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shader} & shader \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_g_l_s_l_program_ae1ebde6b1ea8269f37064adb8e6d857f}{}\label{class_g_l_s_l_program_ae1ebde6b1ea8269f37064adb8e6d857f} 
+\index{G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}!compile\+Shader@{compile\+Shader}}
+\index{compile\+Shader@{compile\+Shader}!G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}}
+\subsubsection{\texorpdfstring{compile\+Shader()}{compileShader()}}
+{\footnotesize\ttfamily void G\+L\+S\+L\+Program\+::compile\+Shader (\begin{DoxyParamCaption}\item[{G\+Luint}]{shader }\end{DoxyParamCaption})}
+
+
+
+gl\+Compile\+Shader compiles the source code strings that have been stored in the shader object specified by shader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shader} & shader \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_g_l_s_l_program_a31f24024046d5ed7646d0c53df4898dc}{}\label{class_g_l_s_l_program_a31f24024046d5ed7646d0c53df4898dc} 
+\index{G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}!compile\+Shader\+From\+File@{compile\+Shader\+From\+File}}
+\index{compile\+Shader\+From\+File@{compile\+Shader\+From\+File}!G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}}
+\subsubsection{\texorpdfstring{compile\+Shader\+From\+File()}{compileShaderFromFile()}}
+{\footnotesize\ttfamily bool G\+L\+S\+L\+Program\+::compile\+Shader\+From\+File (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Name,  }\item[{\hyperlink{namespace_g_l_s_l_shader_a5da03bdfde28d414fcf090182b3b8177}{G\+L\+S\+L\+Shader\+::\+G\+L\+S\+L\+Shader\+Type}}]{type }\end{DoxyParamCaption})}
+
+
+
+Read the shader source from a file and compile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & \+: name of the file \\
+\hline
+{\em type} & \+: type of shader \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_g_l_s_l_program_a428c7ce6d50b7100d06c621e6647dda8}{}\label{class_g_l_s_l_program_a428c7ce6d50b7100d06c621e6647dda8} 
+\index{G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}!compile\+Shader\+From\+String@{compile\+Shader\+From\+String}}
+\index{compile\+Shader\+From\+String@{compile\+Shader\+From\+String}!G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}}
+\subsubsection{\texorpdfstring{compile\+Shader\+From\+String()}{compileShaderFromString()}}
+{\footnotesize\ttfamily bool G\+L\+S\+L\+Program\+::compile\+Shader\+From\+String (\begin{DoxyParamCaption}\item[{const string \&}]{source,  }\item[{\hyperlink{namespace_g_l_s_l_shader_a5da03bdfde28d414fcf090182b3b8177}{G\+L\+S\+L\+Shader\+::\+G\+L\+S\+L\+Shader\+Type}}]{type }\end{DoxyParamCaption})}
+
+
+
+Compiles shader source code stored in a string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & \+: source of the shader \\
+\hline
+{\em type} & \+: type of shader \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_g_l_s_l_program_a07aaaf69f5837deb59a7551dc323f667}{}\label{class_g_l_s_l_program_a07aaaf69f5837deb59a7551dc323f667} 
+\index{G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}!create\+Object@{create\+Object}}
+\index{create\+Object@{create\+Object}!G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}}
+\subsubsection{\texorpdfstring{create\+Object()}{createObject()}}
+{\footnotesize\ttfamily bool G\+L\+S\+L\+Program\+::create\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates an empty program object and returns a non-\/zero value by which it can be referenced. \hypertarget{class_g_l_s_l_program_ae4fe65254ed23ef5fba32dd4b7a3bee2}{}\label{class_g_l_s_l_program_ae4fe65254ed23ef5fba32dd4b7a3bee2} 
+\index{G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}!create\+Shader@{create\+Shader}}
+\index{create\+Shader@{create\+Shader}!G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}}
+\subsubsection{\texorpdfstring{create\+Shader()}{createShader()}}
+{\footnotesize\ttfamily G\+Luint G\+L\+S\+L\+Program\+::create\+Shader (\begin{DoxyParamCaption}\item[{G\+Lenum}]{shader\+Type }\end{DoxyParamCaption})}
+
+
+
+gl\+Create\+Shader creates an empty shader object and returns a non-\/zero value by which it can be referenced. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shader\+Type} & type of the shader \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_g_l_s_l_program_a37f5a6e85135bc51ed4a94712bacde76}{}\label{class_g_l_s_l_program_a37f5a6e85135bc51ed4a94712bacde76} 
+\index{G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}!get\+Handle@{get\+Handle}}
+\index{get\+Handle@{get\+Handle}!G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}}
+\subsubsection{\texorpdfstring{get\+Handle()}{getHandle()}}
+{\footnotesize\ttfamily G\+Luint G\+L\+S\+L\+Program\+::get\+Handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return the program object handle \hypertarget{class_g_l_s_l_program_ae34d52138ce5780b39a6396e68b90349}{}\label{class_g_l_s_l_program_ae34d52138ce5780b39a6396e68b90349} 
+\index{G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}!glcpp\+Shader\+Source@{glcpp\+Shader\+Source}}
+\index{glcpp\+Shader\+Source@{glcpp\+Shader\+Source}!G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}}
+\subsubsection{\texorpdfstring{glcpp\+Shader\+Source()}{glcppShaderSource()}}
+{\footnotesize\ttfamily void G\+L\+S\+L\+Program\+::glcpp\+Shader\+Source (\begin{DoxyParamCaption}\item[{G\+Luint}]{shader,  }\item[{std\+::string const \&}]{shader\+\_\+string }\end{DoxyParamCaption})}
+
+
+
+gl\+Shader\+Source sets the source code in shader to the source code in the array of strings specified by string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shader} & \+: shader \\
+\hline
+{\em shader\+\_\+string} & \+: name of the file of the shader (string) \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_g_l_s_l_program_ad0d1efa38db415e35d9a329a93828815}{}\label{class_g_l_s_l_program_ad0d1efa38db415e35d9a329a93828815} 
+\index{G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}!is\+Linked@{is\+Linked}}
+\index{is\+Linked@{is\+Linked}!G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}}
+\subsubsection{\texorpdfstring{is\+Linked()}{isLinked()}}
+{\footnotesize\ttfamily bool G\+L\+S\+L\+Program\+::is\+Linked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the link status \hypertarget{class_g_l_s_l_program_a79c92c1c9a1a09c0a091cd52a8f602c6}{}\label{class_g_l_s_l_program_a79c92c1c9a1a09c0a091cd52a8f602c6} 
+\index{G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}!link@{link}}
+\index{link@{link}!G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}}
+\subsubsection{\texorpdfstring{link()}{link()}}
+{\footnotesize\ttfamily bool G\+L\+S\+L\+Program\+::link (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Links the program object specified by handle. \hypertarget{class_g_l_s_l_program_afe85e8fe71e8b906f72ca3858531fa39}{}\label{class_g_l_s_l_program_afe85e8fe71e8b906f72ca3858531fa39} 
+\index{G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}!load\+\_\+shader@{load\+\_\+shader}}
+\index{load\+\_\+shader@{load\+\_\+shader}!G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}}
+\subsubsection{\texorpdfstring{load\+\_\+shader()}{load\_shader()}}
+{\footnotesize\ttfamily void G\+L\+S\+L\+Program\+::load\+\_\+shader (\begin{DoxyParamCaption}\item[{G\+Luint}]{shaderobject,  }\item[{const char $\ast$}]{shadersourcefilename }\end{DoxyParamCaption})}
+
+
+
+Load the shader code from a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shaderobject} & \+: shader object \\
+\hline
+{\em shadersourcefilename} & \+: name of the file of the shader \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_g_l_s_l_program_afc8f73c15d9696c49783b86a187123be}{}\label{class_g_l_s_l_program_afc8f73c15d9696c49783b86a187123be} 
+\index{G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}!load\+File\+To\+String@{load\+File\+To\+String}}
+\index{load\+File\+To\+String@{load\+File\+To\+String}!G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}}
+\subsubsection{\texorpdfstring{load\+File\+To\+String()}{loadFileToString()}}
+{\footnotesize\ttfamily std\+::string G\+L\+S\+L\+Program\+::load\+File\+To\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{fname }\end{DoxyParamCaption})}
+
+
+
+Load the shader source code from the file into a string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fname} & \+: name of the file \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_g_l_s_l_program_ac03cbf803fbcc60d3ff4b3b6d4ecbaa6}{}\label{class_g_l_s_l_program_ac03cbf803fbcc60d3ff4b3b6d4ecbaa6} 
+\index{G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}!log@{log}}
+\index{log@{log}!G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}}
+\subsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily string G\+L\+S\+L\+Program\+::log (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the log\+String \hypertarget{class_g_l_s_l_program_aab7c8bc0e5d0b75a9eb0c60de3cda5b5}{}\label{class_g_l_s_l_program_aab7c8bc0e5d0b75a9eb0c60de3cda5b5} 
+\index{G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}!print\+Active\+Attribs@{print\+Active\+Attribs}}
+\index{print\+Active\+Attribs@{print\+Active\+Attribs}!G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}}
+\subsubsection{\texorpdfstring{print\+Active\+Attribs()}{printActiveAttribs()}}
+{\footnotesize\ttfamily void G\+L\+S\+L\+Program\+::print\+Active\+Attribs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prints all the active attribute variables. 
+
+\hypertarget{class_g_l_s_l_program_a75e11d36a5b634c58a84caa96c9c38e4}{}\label{class_g_l_s_l_program_a75e11d36a5b634c58a84caa96c9c38e4} 
+\index{G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}!print\+Active\+Uniforms@{print\+Active\+Uniforms}}
+\index{print\+Active\+Uniforms@{print\+Active\+Uniforms}!G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}}
+\subsubsection{\texorpdfstring{print\+Active\+Uniforms()}{printActiveUniforms()}}
+{\footnotesize\ttfamily void G\+L\+S\+L\+Program\+::print\+Active\+Uniforms (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prints all the active uniform variables. 
+
+\hypertarget{class_g_l_s_l_program_a85e4c896c2a8524cb4574a064a2dfb0c}{}\label{class_g_l_s_l_program_a85e4c896c2a8524cb4574a064a2dfb0c} 
+\index{G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}!set\+Uniform@{set\+Uniform}}
+\index{set\+Uniform@{set\+Uniform}!G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}}
+\subsubsection{\texorpdfstring{set\+Uniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/8]}}
+{\footnotesize\ttfamily void G\+L\+S\+L\+Program\+::set\+Uniform (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
+
+
+
+x,y,z are the new values to be used for the specified uniform variable 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & name \\
+\hline
+{\em x} & coordinate x \\
+\hline
+{\em y} & coordinate y \\
+\hline
+{\em z} & coordinate z \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_g_l_s_l_program_a8784d794a6dbe97903d85bd0135a61c8}{}\label{class_g_l_s_l_program_a8784d794a6dbe97903d85bd0135a61c8} 
+\index{G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}!set\+Uniform@{set\+Uniform}}
+\index{set\+Uniform@{set\+Uniform}!G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}}
+\subsubsection{\texorpdfstring{set\+Uniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/8]}}
+{\footnotesize\ttfamily void G\+L\+S\+L\+Program\+::set\+Uniform (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const vec3 \&}]{v }\end{DoxyParamCaption})}
+
+
+
+v.\+x,v.\+y,v.\+z are the new values to be used for the specified uniform variable 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & name \\
+\hline
+{\em v} & vector of values \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_g_l_s_l_program_aadf3691c119baac516735b0d01b85f7e}{}\label{class_g_l_s_l_program_aadf3691c119baac516735b0d01b85f7e} 
+\index{G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}!set\+Uniform@{set\+Uniform}}
+\index{set\+Uniform@{set\+Uniform}!G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}}
+\subsubsection{\texorpdfstring{set\+Uniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [3/8]}}
+{\footnotesize\ttfamily void G\+L\+S\+L\+Program\+::set\+Uniform (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const vec4 \&}]{v }\end{DoxyParamCaption})}
+
+
+
+v.\+x,v.\+y,v.\+z, v.\+w are the new values to be used for the specified uniform variable 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & name \\
+\hline
+{\em v} & vector of values \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_g_l_s_l_program_aae087de52f91a47ac23c9f6ebf369bc3}{}\label{class_g_l_s_l_program_aae087de52f91a47ac23c9f6ebf369bc3} 
+\index{G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}!set\+Uniform@{set\+Uniform}}
+\index{set\+Uniform@{set\+Uniform}!G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}}
+\subsubsection{\texorpdfstring{set\+Uniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [4/8]}}
+{\footnotesize\ttfamily void G\+L\+S\+L\+Program\+::set\+Uniform (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{float}]{val }\end{DoxyParamCaption})}
+
+
+
+val is the new value for the uniform variable 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & name \\
+\hline
+{\em val} & value of the uniform variable \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_g_l_s_l_program_a437782e359f10918044f1bbad0a98148}{}\label{class_g_l_s_l_program_a437782e359f10918044f1bbad0a98148} 
+\index{G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}!set\+Uniform@{set\+Uniform}}
+\index{set\+Uniform@{set\+Uniform}!G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}}
+\subsubsection{\texorpdfstring{set\+Uniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [5/8]}}
+{\footnotesize\ttfamily void G\+L\+S\+L\+Program\+::set\+Uniform (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{int}]{val }\end{DoxyParamCaption})}
+
+
+
+val is the new value for the uniform variable 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & name \\
+\hline
+{\em val} & value of the uniform variable \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_g_l_s_l_program_acfab16fafb4617f0625f170b39716eb8}{}\label{class_g_l_s_l_program_acfab16fafb4617f0625f170b39716eb8} 
+\index{G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}!set\+Uniform@{set\+Uniform}}
+\index{set\+Uniform@{set\+Uniform}!G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}}
+\subsubsection{\texorpdfstring{set\+Uniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [6/8]}}
+{\footnotesize\ttfamily void G\+L\+S\+L\+Program\+::set\+Uniform (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{bool}]{val }\end{DoxyParamCaption})}
+
+
+
+val is the new value for the uniform variable 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & name \\
+\hline
+{\em val} & value of the uniform variable \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_g_l_s_l_program_a44a7ace14e6c82311526e47264957fa9}{}\label{class_g_l_s_l_program_a44a7ace14e6c82311526e47264957fa9} 
+\index{G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}!set\+Uniform@{set\+Uniform}}
+\index{set\+Uniform@{set\+Uniform}!G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}}
+\subsubsection{\texorpdfstring{set\+Uniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [7/8]}}
+{\footnotesize\ttfamily void G\+L\+S\+L\+Program\+::set\+Uniform (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const mat4 \&}]{m }\end{DoxyParamCaption})}
+
+
+
+The commands gl\+Uniform\+Matrix\{2$\vert$3$\vert$4\}fv are used to modify a matrix or an array of matrices. The numbers in the command name are interpreted as the dimensionality of the matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & name \\
+\hline
+{\em m} & matrix 4$\ast$4 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_g_l_s_l_program_a69bd967b17f6b06e9fd4772b25e86396}{}\label{class_g_l_s_l_program_a69bd967b17f6b06e9fd4772b25e86396} 
+\index{G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}!set\+Uniform@{set\+Uniform}}
+\index{set\+Uniform@{set\+Uniform}!G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}}
+\subsubsection{\texorpdfstring{set\+Uniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [8/8]}}
+{\footnotesize\ttfamily void G\+L\+S\+L\+Program\+::set\+Uniform (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const mat3 \&}]{m }\end{DoxyParamCaption})}
+
+
+
+The commands gl\+Uniform\+Matrix\{2$\vert$3$\vert$4\}fv are used to modify a matrix or an array of matrices. The numbers in the command name are interpreted as the dimensionality of the matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & name \\
+\hline
+{\em m} & matrix 3$\ast$3 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_g_l_s_l_program_a0ea2aeacb4361b37f145246430134bb6}{}\label{class_g_l_s_l_program_a0ea2aeacb4361b37f145246430134bb6} 
+\index{G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}!use@{use}}
+\index{use@{use}!G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}}
+\subsubsection{\texorpdfstring{use()}{use()}}
+{\footnotesize\ttfamily void G\+L\+S\+L\+Program\+::use (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Installs the program object specified by handle as part of current rendering state. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Q\+T\+\_\+projets/\+Cube\+Menu/\hyperlink{glslprogram_8h}{glslprogram.\+h}\item 
+D\+:/\+Q\+T\+\_\+projets/\+Cube\+Menu/\hyperlink{glslprogram_8cpp}{glslprogram.\+cpp}\end{DoxyCompactItemize}
